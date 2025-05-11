@@ -1,0 +1,29 @@
+import React from 'react'
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
+import { Link } from 'react-router-dom';
+import { useUser } from './UserContext';
+function Modern() {
+  const { user } = useUser()
+  return (
+    <div className=' container-fluid' style={{ backgroundColor: "rgb(59, 93, 80)" }}>
+      <Row className='px-5'>
+        <Col md={5} className='mt-5'>
+          <h1 className='text-white display-4 fw-bold mt-5'>Modern Interior Design Studio</h1>
+          {user ? <h1 className='text-white'>Hii {user.name}</h1> : null}
+          <p className='text-light'>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.
+          </p>
+          <Link to='/shop'><Button variant="warning" className='rounded-pill px-5 py-3 text-black'>Shop Now</Button></Link>
+          <Button variant="outline-light" className='rounded-pill px-5 py-3 ms-2'>Explore</Button>
+        </Col>
+        <Col md={7}>
+          <img src='./images/couch.png' alt="couch" className='h-100 img-fluid w-100 float-end' ></img>
+        </Col>
+      </Row>
+
+    </div>
+  )
+}
+
+export default Modern;

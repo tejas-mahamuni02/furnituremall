@@ -1,0 +1,18 @@
+.App {
+  text-align: center;
+}
+
+.ullist {
+  list-style: disc;
+}
+
+a:visited,
+a:link {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+a:hover,
+a:active {
+  color: white;
+}

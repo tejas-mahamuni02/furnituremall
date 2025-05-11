@@ -1,0 +1,99 @@
+.ullist {
+  list-style: circle;
+}
+
+.card-images:hover {
+  opacity: 0.6;
+  transition: 0.2s;
+  transition-timing-function: ease-out;
+}
+
+.lineheight {
+  line-height: 15px;
+}
+
+.badge-container {
+  position: relative;
+  padding-top: 20px;
+  display: inline-block;
+  margin-top: -20px;
+}
+
+.notify-badge {
+  position: absolute;
+  right: -20px;
+  top: 10px;
+  background: rgb(235, 135, 135);
+  text-align: center;
+  border-radius: 30px 30px 30px 30px;
+  color: white;
+  padding: 3px 7px;
+  font-size: 15px;
+}
+
+.product img {
+  filter: drop-shadow(5px 5px 10px #000);
+}
+
+
+.myprofilenavlink {
+  text-decoration: none;
+  color: cadetblue;
+}
+
+
+/* #myprofilenav>a:visited,
+a:link {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#myprofilenav>a:hover,
+a:active {
+  color: black;
+} */
+
+/* div.scroll {
+  height: 350px;
+  overflow-y: auto;
+}
+
+.bookingtable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.bookingtable>thead {
+  position: sticky;
+  z-index: 1;
+}
+
+.bookingtable>tbody {
+  max-height: 300px;
+  overflow-y: auto;
+} */
+
+.fixTableHead {
+  overflow-y: auto;
+  height: 300px;
+}
+
+.fixTableHead thead th {
+  position: sticky;
+  top: 0;
+}
+
+.fixTableHead>table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* .fixTableHead>th,
+td {
+  padding: 8px 15px;
+  border: 2px solid #529432;
+} */
+
+/* .fixTableHead>th {
+  background: #ABDD93;
+} */
